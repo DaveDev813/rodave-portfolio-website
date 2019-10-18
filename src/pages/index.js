@@ -10,6 +10,8 @@ import {
 } from "react-vertical-timeline-component"
 import "react-vertical-timeline-component/style.min.css"
 import SkillBar from "react-skillbars"
+import "../css/fontawesome-all.min.css"
+import "../css/noscript.css"
 
 // https://html5up.net/hyperspace
 
@@ -104,343 +106,64 @@ const IndexPage = () => (
         </div>
       </section>
 
-      <section id="hard" className="wrapper style3 fade-up">
+      <section id="one" className="wrapper style3 fade-up">
         <div className="inner">
-          <SkillBar skills={SKILLS} height={50} />
-        </div>
-      </section>
-
-      {/* One */}
-      <section id="one" className="wrapper style2 spotlights">
-        <section>
-          <a href="#" className="image">
-            <img src="images/pic01.jpg" alt="" data-position="center center" />
-          </a>
-          <div className="content">
-            <div className="inner">
-              <h2>Sed ipsum dolor</h2>
-              <p>
-                Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam
-                turpis mauris, eu ultricies erat malesuada quis. Aliquam
-                dapibus.
-              </p>
-              <ul className="actions">
-                <li>
-                  <a href="generic.html" className="button">
-                    Learn more
-                  </a>
-                </li>
-              </ul>
+          <div className="inner">
+            <h2>Soft Skills</h2>
+            <blockquote>
+              Good code is its own best documentation. As you're about to add a
+              comment, ask yourself, "How can I improve the code so that this
+              comment isn't needed?" Improve the code and then document it to
+              make it even clearer. - someone from the internet
+            </blockquote>
+            <div className="features">
+              <section>
+                <span className="icon solid major fa-thumbs-up" />
+                <h3>Decision making</h3>
+                <p>
+                  Possesses outstanding decision making and problem solving
+                  skills.
+                </p>
+              </section>
+              <section>
+                <span className="icon solid major fa-glasses" />
+                <h3>Attention to detail</h3>
+                <p>
+                  Great attention to detail and concern for quality of projects,
+                  codes and accuracy of data.
+                </p>
+              </section>
+              <section>
+                <span className="icon solid major fa-fire" />
+                <h3>Passion</h3>
+                <p>
+                  I have the passion in learning new technologies and trends
+                  which I adapt to help and improve my projects.
+                </p>
+              </section>
+              <section>
+                <span className="icon solid major fa-grin-stars" />
+                <h3>Dedication</h3>
+                <p>
+                  I am self-directed, self-motivated, and work great within a
+                  team.
+                </p>
+              </section>
+              <section>
+                <span className="icon solid major fa-link" />
+                <h3>Communication</h3>
+                <p>
+                  Possess great communication skills and interpersonal skills
+                  specially in coordinating with team members, and can provide
+                  adequate documentation on projects.
+                </p>
+              </section>
+              <section>
+                <span className="icon major fa-gem" />
+                <h3>Resilience</h3>
+                <p>Can work under pressure with minimal supervision.</p>
+              </section>
             </div>
-          </div>
-        </section>
-        <section>
-          <a href="#" className="image">
-            <img src="images/pic02.jpg" alt="" data-position="top center" />
-          </a>
-          <div className="content">
-            <div className="inner">
-              <h2>Feugiat consequat</h2>
-              <p>
-                Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam
-                turpis mauris, eu ultricies erat malesuada quis. Aliquam
-                dapibus.
-              </p>
-              <ul className="actions">
-                <li>
-                  <a href="generic.html" className="button">
-                    Learn more
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-        <section>
-          <a href="#" className="image">
-            <img src="images/pic03.jpg" alt="" data-position="25% 25%" />
-          </a>
-          <div className="content">
-            <div className="inner">
-              <h2>Ultricies aliquam</h2>
-              <p>
-                Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam
-                turpis mauris, eu ultricies erat malesuada quis. Aliquam
-                dapibus.
-              </p>
-              <ul className="actions">
-                <li>
-                  <a href="generic.html" className="button">
-                    Learn more
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-      </section>
-      {/* Timeline */}
-      <section id="three" className="wrapper style1 fade-up">
-        <VerticalTimeline>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-            contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-            date="2011 - present"
-            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          >
-            <h3 className="vertical-timeline-element-title">
-              Creative Director
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-            <p>
-              Creative Direction, User Experience, Visual Design, Project
-              Management, Team Leading
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2010 - 2011"
-            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          >
-            <h3 className="vertical-timeline-element-title">Art Director</h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              San Francisco, CA
-            </h4>
-            <p>
-              Creative Direction, User Experience, Visual Design, SEO, Online
-              Marketing
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2008 - 2010"
-            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          >
-            <h3 className="vertical-timeline-element-title">Web Designer</h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              Los Angeles, CA
-            </h4>
-            <p>User Experience, Visual Design</p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2006 - 2008"
-            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          >
-            <h3 className="vertical-timeline-element-title">Web Designer</h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              San Francisco, CA
-            </h4>
-            <p>User Experience, Visual Design</p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--education"
-            date="April 2013"
-            iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-          >
-            <h3 className="vertical-timeline-element-title">
-              Content Marketing for Web, Mobile and Social Media
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              Online Course
-            </h4>
-            <p>Strategy, Social Media</p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--education"
-            date="November 2012"
-            iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-          >
-            <h3 className="vertical-timeline-element-title">
-              Agile Development Scrum Master
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              Certification
-            </h4>
-            <p>Creative Direction, User Experience, Visual Design</p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--education"
-            date="2002 - 2006"
-            iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-          >
-            <h3 className="vertical-timeline-element-title">
-              Bachelor of Science in Interactive Digital Media Visual Imaging
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              Bachelor Degree
-            </h4>
-            <p>Creative Direction, Visual Design</p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            iconStyle={{ background: "rgb(16, 204, 82)", color: "#fff" }}
-          />
-        </VerticalTimeline>
-      </section>
-
-      {/* Two */}
-      <section id="two" className="wrapper style3 fade-up">
-        <div className="inner">
-          <h2>What we do</h2>
-          <p>
-            Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam
-            turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus,
-            lacus eget hendrerit bibendum, urna est aliquam sem, sit amet
-            imperdiet est velit quis lorem.
-          </p>
-          <div className="features">
-            <section>
-              <span className="icon solid major fa-code" />
-              <h3>Lorem ipsum amet</h3>
-              <p>
-                Phasellus convallis elit id ullam corper amet et pulvinar. Duis
-                aliquam turpis mauris, sed ultricies erat dapibus.
-              </p>
-            </section>
-            <section>
-              <span className="icon solid major fa-lock" />
-              <h3>Aliquam sed nullam</h3>
-              <p>
-                Phasellus convallis elit id ullam corper amet et pulvinar. Duis
-                aliquam turpis mauris, sed ultricies erat dapibus.
-              </p>
-            </section>
-            <section>
-              <span className="icon solid major fa-cog" />
-              <h3>Sed erat ullam corper</h3>
-              <p>
-                Phasellus convallis elit id ullam corper amet et pulvinar. Duis
-                aliquam turpis mauris, sed ultricies erat dapibus.
-              </p>
-            </section>
-            <section>
-              <span className="icon solid major fa-desktop" />
-              <h3>Veroeros quis lorem</h3>
-              <p>
-                Phasellus convallis elit id ullam corper amet et pulvinar. Duis
-                aliquam turpis mauris, sed ultricies erat dapibus.
-              </p>
-            </section>
-            <section>
-              <span className="icon solid major fa-link" />
-              <h3>Urna quis bibendum</h3>
-              <p>
-                Phasellus convallis elit id ullam corper amet et pulvinar. Duis
-                aliquam turpis mauris, sed ultricies erat dapibus.
-              </p>
-            </section>
-            <section>
-              <span className="icon major fa-gem" />
-              <h3>Aliquam urna dapibus</h3>
-              <p>
-                Phasellus convallis elit id ullam corper amet et pulvinar. Duis
-                aliquam turpis mauris, sed ultricies erat dapibus.
-              </p>
-            </section>
-          </div>
-          <ul className="actions">
-            <li>
-              <a href="generic.html" className="button">
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-      {/* Three */}
-      <section id="none" className="wrapper style1 fade-up">
-        <div className="inner">
-          <h2>Get in touch</h2>
-          <p>
-            Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam
-            turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus,
-            lacus eget hendrerit bibendum, urna est aliquam sem, sit amet
-            imperdiet est velit quis lorem.
-          </p>
-          <div className="split style1">
-            <section>
-              <form method="post" action="#">
-                <div className="fields">
-                  <div className="field half">
-                    <label htmlFor="name">Name</label>
-                    <input type="text" name="name" id="name" />
-                  </div>
-                  <div className="field half">
-                    <label htmlFor="email">Email</label>
-                    <input type="text" name="email" id="email" />
-                  </div>
-                  <div className="field">
-                    <label htmlFor="message">Message</label>
-                    <textarea
-                      name="message"
-                      id="message"
-                      rows={5}
-                      defaultValue={""}
-                    />
-                  </div>
-                </div>
-                <ul className="actions">
-                  <li>
-                    <a href className="button submit">
-                      Send Message
-                    </a>
-                  </li>
-                </ul>
-              </form>
-            </section>
-            <section>
-              <ul className="contact">
-                <li>
-                  <h3>Address</h3>
-                  <span>
-                    12345 Somewhere Road #654
-                    <br />
-                    Nashville, TN 00000-0000
-                    <br />
-                    USA
-                  </span>
-                </li>
-                <li>
-                  <h3>Email</h3>
-                  <a href="#">user@untitled.tld</a>
-                </li>
-                <li>
-                  <h3>Phone</h3>
-                  <span>(000) 000-0000</span>
-                </li>
-                <li>
-                  <h3>Social</h3>
-                  <ul className="icons">
-                    <li>
-                      <a href="#" className="icon brands fa-twitter">
-                        <span className="label">Twitter</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="icon brands fa-facebook-f">
-                        <span className="label">Facebook</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="icon brands fa-github">
-                        <span className="label">GitHub</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="icon brands fa-instagram">
-                        <span className="label">Instagram</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="icon brands fa-linkedin-in">
-                        <span className="label">LinkedIn</span>
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </section>
           </div>
         </div>
       </section>
