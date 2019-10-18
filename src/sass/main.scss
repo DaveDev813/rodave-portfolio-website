@@ -81,3 +81,11 @@
   top: 10%;
   right: 10%;
 }
+
+@media screen and (max-width: 1280px) {
+  .avatar {
+    margin: 0 auto;
+    margin-top: 13%;
+    position: static;
+  }
+}

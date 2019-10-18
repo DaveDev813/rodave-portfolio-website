@@ -4,8 +4,6 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component"
 
-import Nuevasys from "../../images/nuevasys.png"
-
 const Proff = () => (
   <section id="three" className="wrapper style1 fade-up">
     <div className="inner">
@@ -38,7 +36,6 @@ const Proff = () => (
           contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
           date="June 24, 2015 – November 17, 2017"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          icon="images/nuevasys.png"
         >
           <h3 className="vertical-timeline-element-title">
             <a href="http://nuevasys.ph/">Nuevasys Inc.</a>
