@@ -1,5 +1,5 @@
 import React from "react"
-import SkillBar from "react-skillbars"
+// import SkillBar from "react-skillbars"
 
 const SKILLS1 = [
   {
@@ -70,17 +70,25 @@ const SKILLS3 = [
     level: 65,
   },
 ]
+const Empty = () => <React.Fragment />
+
+const SkillBar =
+  typeof window !== `undefined` ? require("react-skillbars").default : Empty
 
 const HardSkills = () => (
   <section id="hard" className="wrapper style3 fade-up">
     <div className="inner">
       <h1 class="major">Hard Skills</h1>
       <h2>JavaScript</h2>
-      <SkillBar skills={SKILLS1} height={50} animationDelay={100} />
-      <h2>Php</h2>
-      <SkillBar skills={SKILLS2} height={50} animationDelay={100} />
-      <h2>Other Web Stuff</h2>
-      <SkillBar skills={SKILLS3} height={50} animationDelay={100} />
+      {typeof window !== `undefined` && (
+        <React.Fragment>
+          <SkillBar skills={SKILLS1} height={50} animationDelay={100} />
+          <h2>Php</h2>
+          <SkillBar skills={SKILLS2} height={50} animationDelay={100} />
+          <h2>Other Web Stuff</h2>
+          <SkillBar skills={SKILLS3} height={50} animationDelay={100} />
+        </React.Fragment>
+      )}
     </div>
   </section>
 )
