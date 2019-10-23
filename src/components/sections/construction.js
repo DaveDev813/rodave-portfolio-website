@@ -5,7 +5,7 @@ const Construction = () => (
     <div class="inner">
       <h3>This website is still under construction</h3>
       <blockquote>
-        If you can see any issues, you can report it{" "}
+        If you see any issues, you can report it{" "}
         <a href="https://github.com/DaveDev813/rodave-portfolio-website/issues">
           here on Github
         </a>
