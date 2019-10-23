@@ -7,7 +7,7 @@ import "react-vertical-timeline-component/style.min.css"
 import Avatar from "react-avatar"
 
 const Proff = () => (
-  <section id="three" className="wrapper style1 fade-up">
+  <section id="three" className="wrapper style1 fade-up proff">
     <div className="inner">
       <h1 class="major">Professional Experience</h1>
       <VerticalTimeline>
@@ -116,7 +116,7 @@ const Proff = () => (
           contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
           date="April 24, 2012 – June 24, 2012"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          icon={<Avatar src="/images/tp.png" size="60" round={true} alt="" />}
+          icon={<Avatar src="/images/tp.png" round={true} alt="" />}
         >
           <h3 className="vertical-timeline-element-title">
             <a href="http://www.teleperformance.ph/en-us/">Teleperformance</a>
