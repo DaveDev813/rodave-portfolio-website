@@ -1,0 +1,18 @@
+import React from "react"
+
+const Construction = () => (
+  <section id="three" className="wrapper style3 fade-up proff">
+    <div class="inner">
+      <h3>This website is still under construction</h3>
+      <blockquote>
+        If you can see any issues, you can report it{" "}
+        <a href="https://github.com/DaveDev813/rodave-portfolio-website/issues">
+          here on Github
+        </a>
+        .
+      </blockquote>
+    </div>
+  </section>
+)
+
+export default Construction
