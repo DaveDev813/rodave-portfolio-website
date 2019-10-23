@@ -11,45 +11,39 @@ import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
 function SEO({ description, lang, meta, title }) {
-  const { site } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            description
-            author
-          }
-        }
-      }
-    `
-  )
-
-  const metaDescription = description || site.siteMetadata.description
-
+  const titleStatic = "Portfolio | Rodave Joseph Bobadilla"
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
-      title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      title={titleStatic}
       meta={[
         {
           name: `description`,
-          content: metaDescription,
+          content:
+            "Rodave Joseph B. Bobadilla | Full-stack software engineer with years of experience in ReactJS, React Native, Angular, and other Javascript libraries and frameworks.",
         },
         {
           property: `og:title`,
-          content: title,
+          content: titleStatic,
         },
         {
           property: `og:description`,
-          content: metaDescription,
+          content:
+            "Rodave Joseph B. Bobadilla | Full-stack software engineer with years of experience in ReactJS, React Native, Angular, and other Javascript libraries and frameworks.",
         },
         {
           property: `og:type`,
           content: `website`,
+        },
+        {
+          property: `og:image`,
+          content: `/images/rodave.png`,
+        },
+        {
+          property: `og:url`,
+          content: `rodave-dev.web.app`,
         },
         {
           name: `twitter:card`,
@@ -57,15 +51,16 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata.author,
+          content: "Rodave Joseph B. Bobadilla",
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: titleStatic,
         },
         {
           name: `twitter:description`,
-          content: metaDescription,
+          content:
+            "Rodave Joseph B. Bobadilla | Full-stack software engineer with years of experience in ReactJS, React Native, Angular, and other Javascript libraries and frameworks.",
         },
       ].concat(meta)}
     />

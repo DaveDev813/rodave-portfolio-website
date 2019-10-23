@@ -9,11 +9,13 @@ import Proff from "../components/sections/proff"
 import "../sass/main.scss"
 import "../css/fontawesome-all.min.css"
 import "../css/noscript.css"
+import SEO from "../components/seo"
 
 // https://html5up.net/hyperspace
 
 const IndexPage = () => (
   <div>
+    <SEO />
     <SideBar />
     <div id="wrapper">
       <Intro />

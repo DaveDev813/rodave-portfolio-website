@@ -17,7 +17,7 @@ const SideBar = () => (
           <li>
             <a href="#three">Professional Experience</a>
           </li>
-          <li>
+          {/* <li>
             <a href="#three">Seminars Attended</a>
           </li>
           <li>
@@ -25,7 +25,7 @@ const SideBar = () => (
           </li>
           <li>
             <a href="#three">Education</a>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </div>
