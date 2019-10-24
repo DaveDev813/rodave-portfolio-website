@@ -21,7 +21,7 @@ const Intro = () => {
         <Fade up ssrFadeout>
           <h1 style={{ margin: 0 }}>Rodave Joseph B. Bobadilla</h1>
         </Fade>
-        <Fade up ssrFadeout delay={incrimentDelay(true)}>
+        <Fade up ssrFadeout delay={incrimentDelay()}>
           <h2>Full-stack Software Engineer</h2>
         </Fade>
         <Fade up ssrFadeout delay={incrimentDelay()}>
