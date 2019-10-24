@@ -11,11 +11,12 @@ import "../css/fontawesome-all.min.css"
 import "../css/noscript.css"
 import SEO from "../components/seo"
 import Construction from "../components/sections/construction"
+import Seminars from "../components/sections/seminars"
 
 // https://html5up.net/hyperspace
 
 const IndexPage = () => (
-  <div className="main-container is-preload fuck">
+  <div className="main-container">
     <SEO />
     <SideBar />
     <div id="wrapper">
@@ -23,6 +24,7 @@ const IndexPage = () => (
       <SoftSkills />
       <HardSkills />
       <Proff />
+      <Seminars />
       <Construction />
     </div>
     <Footer />
