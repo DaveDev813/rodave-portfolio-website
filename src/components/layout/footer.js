@@ -14,7 +14,7 @@ const Footer = () => (
     </footer>
     {/* Scripts */}
     <Helmet>
-      <script
+      {/* <script
         async
         defer
         src={withPrefix("js/jquery.min.js")}
@@ -49,11 +49,11 @@ const Footer = () => (
         defer
         src={withPrefix("js/util.js")}
         type="text/javascript"
-      />
+      /> */}
       <script
         async
         defer
-        src={withPrefix("js/main.js")}
+        src={withPrefix("js/compressed.js")}
         type="text/javascript"
       />
     </Helmet>

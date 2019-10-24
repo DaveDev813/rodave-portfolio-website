@@ -15,7 +15,7 @@ import Construction from "../components/sections/construction"
 // https://html5up.net/hyperspace
 
 const IndexPage = () => (
-  <div>
+  <div className="main-container is-preload fuck">
     <SEO />
     <SideBar />
     <div id="wrapper">
