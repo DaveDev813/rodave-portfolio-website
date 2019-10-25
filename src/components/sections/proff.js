@@ -104,7 +104,7 @@ const Proff = () => (
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="April 24, 2012 – June 24, 2012"
+          date="January 24, 2012 – June 24, 2012"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<Avatar src="/images/tp.png" round={true} alt="" />}
         >

@@ -34,10 +34,13 @@ const Intro = () => {
         <Fade up ssrFadeout delay={incrimentDelay()}>
           <ul className="actions">
             <li>
-              <a
+              {/* <a
                 href="https://drive.google.com/file/d/1gdIWnGb5Xp8v2ffhOv3FvGazcvYxGTzL/view?usp=sharing"
                 className="button icon solid fa-download"
               >
+                Download resume
+              </a> */}
+              <a href="#" className="button icon solid fa-download">
                 Download resume
               </a>
             </li>

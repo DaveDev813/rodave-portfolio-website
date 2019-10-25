@@ -104,3 +104,23 @@
   width: 100%;
   height: 100%;
 }
+
+.skillbar-title {
+  span {
+    background: _palette(accent2-alt);
+  }
+}
+
+.skillbar-bar {
+  background: _palette(accent2);
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+}
+
+.vertical-timeline-element-content {
+  background: _palette(accent3-alt);
+}
+
+.vertical-timeline-element-content-arrow {
+  border-right: 7px solid _palette(accent3-alt);
+}
