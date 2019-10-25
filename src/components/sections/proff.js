@@ -13,8 +13,6 @@ const Proff = () => (
       <VerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
           date="November 20, 2017 - present"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<Avatar src="/images/isbx.png" size="60" round={true} alt="" />}
@@ -35,8 +33,6 @@ const Proff = () => (
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
           date="June 24, 2015 – November 17, 2017"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={
@@ -68,8 +64,6 @@ const Proff = () => (
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
           date="June 24, 2015 – November 17, 2017"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={
@@ -92,8 +86,6 @@ const Proff = () => (
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
           date="April 7, 2014 – July 17, 2014"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<Avatar src="/images/wc.jpg" size="60" round={true} alt="" />}
@@ -112,8 +104,6 @@ const Proff = () => (
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
           date="April 24, 2012 – June 24, 2012"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<Avatar src="/images/tp.png" round={true} alt="" />}

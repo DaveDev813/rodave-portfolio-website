@@ -1,7 +1,7 @@
 import React from "react"
 
 const Construction = () => (
-  <section id="contru" className="wrapper style3 fade-up proff">
+  <section id="contru" className="wrapper style1 fade-up proff">
     <div class="inner">
       <h3>This website is still under construction</h3>
       <blockquote>
