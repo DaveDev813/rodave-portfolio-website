@@ -86,7 +86,6 @@
 @media screen and (max-width: 1280px) {
   .avatar {
     margin: 0 auto;
-    margin-top: 13%;
     position: static;
   }
 }
@@ -107,12 +106,12 @@
 
 .skillbar-title {
   span {
-    background: _palette(accent2-alt);
+    background: _palette(accent2-alt) !important;
   }
 }
 
 .skillbar-bar {
-  background: _palette(accent2);
+  background: _palette(accent2) !important;
   border-top-left-radius: 0px !important;
   border-bottom-left-radius: 0px !important;
 }
