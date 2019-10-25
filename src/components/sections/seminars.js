@@ -6,20 +6,36 @@ const Seminars = () => {
   const [yt1, setYt1] = React.useState(false)
   return (
     <section id="seminar" className="wrapper style2 spotlights">
+      <section style={{ minHeight: "auto", width: "100%" }}>
+        <div className="content" style={{ minHeight: "auto", width: "100%" }}>
+          <div className="inner">
+            <h1 class="major">Seminars Attended</h1>
+          </div>
+        </div>
+      </section>
+
       <section>
         <ModalVideo
           channel="youtube"
           isOpen={yt1}
           videoId="Fa2IO6A7KjE"
           onClose={() => setYt1(false)}
+          youtube={{ autoplay: true }}
         />
-        <img
-          onClick={() => setYt1(true)}
+        <div
           className="image"
-          src="images/deeevcon.png"
-          alt=""
-          data-position="center center"
-        />
+          style={{ display: "flex" }}
+          onClick={() => setYt1(true)}
+        >
+          <img
+            className="thumbImage"
+            src="images/deeevcon.png"
+            alt=""
+            data-position="center center"
+          />
+          {/* <div className="video-play-button" onClick={() => setYt1(true)}></div> */}
+        </div>
+
         <div className="content">
           <div className="inner">
             <h2>DevCon Summit 2019</h2>

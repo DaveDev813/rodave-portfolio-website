@@ -4,6 +4,7 @@
 @import "libs/vendor";
 @import "libs/breakpoints";
 @import "libs/html-grid";
+@import "libs/playButton";
 
 /*
 	Hyperspace by HTML5 UP
@@ -97,4 +98,9 @@
       height: 100% !important;
     }
   }
+}
+
+.thumbImage {
+  width: 100%;
+  height: 100%;
 }
