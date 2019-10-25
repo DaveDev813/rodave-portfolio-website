@@ -40,18 +40,24 @@ $font: (
 );
 
 // Palette.
+$bg: #312450;
+$accent1: #5e42a6;
+$accent2: #5052b5;
+$accent3: #3d3d3d;
+$fontColor: #ffffff;
+
 $palette: (
-  bg: #312450,
-  bg-alt: darken(#312450, 5),
-  fg: rgba(255, 255, 255, 0.55),
-  fg-bold: #ffffff,
-  fg-light: rgba(255, 255, 255, 0.35),
-  border: rgba(255, 255, 255, 0.15),
-  border-bg: rgba(255, 255, 255, 0.05),
-  accent1: #5e42a6,
-  accent1-alt: darken(#5e42a6, 10),
-  accent2: #5052b5,
-  accent2-alt: darken(#5052b5, 10),
-  accent3: #3d3d3d,
-  accent3-alt: darken(#3d3d3d, 10),
+  bg: $bg,
+  bg-alt: darken($bg, 5),
+  fg: rgba($fontColor, 0.55),
+  fg-bold: $fontColor,
+  fg-light: rgba($fontColor, 0.35),
+  border: rgba($fontColor, 0.15),
+  border-bg: rgba($fontColor, 0.05),
+  accent1: $accent1,
+  accent1-alt: darken($accent1, 10),
+  accent2: $accent2,
+  accent2-alt: darken($accent2, 10),
+  accent3: $accent3,
+  accent3-alt: darken($accent3, 10),
 );
