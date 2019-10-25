@@ -41,17 +41,19 @@ $font: (
 
 // Palette.
 
-$accent1: #5e42a6;
-$accent2: #5052b5;
-$accent3: #3d3d3d;
+$accent1: #003b46;
+$accent2: #66a5ad;
+$accent3: #07575b;
 
 $fontColor: #ffffff;
-$bg: #312450;
+$fontColor2: darken($fontColor, 100);
+$bg: darken($accent3, 20);
 
 $palette: (
   bg: $bg,
   bg-alt: darken($bg, 5),
   fg: rgba($fontColor, 0.55),
+  fg2: $fontColor2,
   fg-bold: $fontColor,
   fg-light: rgba($fontColor, 0.35),
   border: rgba($fontColor, 0.15),
