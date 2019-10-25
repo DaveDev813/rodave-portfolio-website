@@ -5,14 +5,14 @@ import "react-modal-video/scss/modal-video.scss"
 const Seminars = () => {
   const [yt1, setYt1] = React.useState(false)
   return (
-    <section id="seminar" className="wrapper style2 spotlights">
-      <section style={{ minHeight: "auto", width: "100%" }}>
+    <section id="seminar" className="wrapper style3 spotlights">
+      {/* <section style={{ minHeight: "auto", width: "100%" }}>
         <div className="content" style={{ minHeight: "auto", width: "100%" }}>
           <div className="inner">
             <h1 class="major">Seminars Attended</h1>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section>
         <ModalVideo
@@ -22,20 +22,14 @@ const Seminars = () => {
           onClose={() => setYt1(false)}
           youtube={{ autoplay: true }}
         />
-        <div
-          className="image"
-          style={{ display: "flex" }}
-          onClick={() => setYt1(true)}
-        >
+        <div className="image" style={{ display: "flex" }}>
           <img
             className="thumbImage"
             src="images/deeevcon.png"
             alt=""
             data-position="center center"
           />
-          {/* <div className="video-play-button" onClick={() => setYt1(true)}></div> */}
         </div>
-
         <div className="content">
           <div className="inner">
             <h2>DevCon Summit 2019</h2>
@@ -47,6 +41,14 @@ const Seminars = () => {
               programmers.
             </p>
             <ul className="actions">
+              <li>
+                <button
+                  className="button icon solid fa-play"
+                  onClick={() => setYt1(true)}
+                >
+                  Play video
+                </button>
+              </li>
               <li>
                 <a href="https://summit.devcon.ph" className="button">
                   Learn more
