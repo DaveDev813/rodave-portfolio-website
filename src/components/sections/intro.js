@@ -1,7 +1,8 @@
 import React from "react"
 import Avatar from "react-avatar"
 import Fade from "react-reveal/Fade"
-const Intro = () => {
+
+const Intro = ({ hasResume = true }) => {
   let delay = 0
   const incrimentDelay = (init = false) => {
     delay = init ? delay : delay + 200
@@ -34,15 +35,18 @@ const Intro = () => {
         <Fade up ssrFadeout delay={incrimentDelay()}>
           <ul className="actions">
             <li>
-              {/* <a
-                href="https://drive.google.com/file/d/1gdIWnGb5Xp8v2ffhOv3FvGazcvYxGTzL/view?usp=sharing"
-                className="button icon solid fa-download"
-              >
-                Download resume
-              </a> */}
-              <a href="#" className="button icon solid fa-download">
-                Download resume
-              </a>
+              {hasResume ? (
+                <a
+                  href="https://drive.google.com/file/d/1gdIWnGb5Xp8v2ffhOv3FvGazcvYxGTzL/view?usp=sharing"
+                  className="button icon solid fa-download"
+                >
+                  Download resume
+                </a>
+              ) : (
+                <a href="#" className="button icon solid fa-download">
+                  Download resume
+                </a>
+              )}
             </li>
           </ul>
         </Fade>
