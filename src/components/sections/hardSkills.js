@@ -83,7 +83,7 @@ const HardSkills = () => (
       {typeof window !== `undefined` && (
         <React.Fragment>
           <SkillBar skills={SKILLS1} height={50} animationDelay={100} />
-          <h2>Php</h2>
+          <h2>PHP</h2>
           <SkillBar skills={SKILLS2} height={50} animationDelay={100} />
           <h2>Other Web Stuff</h2>
           <SkillBar skills={SKILLS3} height={50} animationDelay={100} />

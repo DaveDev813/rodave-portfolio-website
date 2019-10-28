@@ -1,5 +1,6 @@
 import React from "react"
 import ModalVideo from "react-modal-video"
+import Fade from "react-reveal/Fade"
 import "react-modal-video/scss/modal-video.scss"
 
 const SeminarItem = ({
@@ -14,54 +15,55 @@ const SeminarItem = ({
   const [yt1, setYt1] = React.useState(false)
   return (
     <section>
-      {videoId && (
-        <ModalVideo
-          channel="youtube"
-          isOpen={yt1}
-          videoId={videoId}
-          onClose={() => setYt1(false)}
-          youtube={{ autoplay: true }}
-        />
-      )}
-      <div className="image" style={{ display: "flex" }}>
-        <img
-          className="thumbImage"
-          src={img}
-          alt={imgAlt}
-          data-position="center center"
-        />
-      </div>
-      <div className="content">
-        <div className="inner">
-          <h2 style={{ marginBottom: 0 }}>{title}</h2>
-          <h3>{date}</h3>
-          <p>{desc}</p>
-          <ul className="actions">
-            {videoId && (
-              <li>
-                <button
-                  className="button icon solid fa-play"
-                  onClick={() => setYt1(true)}
-                >
-                  Play video
-                </button>
-              </li>
-            )}
-            <li>
-              <a href={learnMore} className="button">
-                Learn more
-              </a>
-            </li>
-          </ul>
+      <Fade up ssrFadeout>
+        {videoId && (
+          <ModalVideo
+            channel="youtube"
+            isOpen={yt1}
+            videoId={videoId}
+            onClose={() => setYt1(false)}
+            youtube={{ autoplay: true }}
+          />
+        )}
+        <div className="image" style={{ display: "flex" }}>
+          <img
+            className="thumbImage"
+            src={img}
+            alt={imgAlt}
+            data-position="center center"
+          />
         </div>
-      </div>
+        <div className="content">
+          <div className="inner">
+            <h2 style={{ marginBottom: 0 }}>{title}</h2>
+            <h3>{date}</h3>
+            <p>{desc}</p>
+            <ul className="actions">
+              {videoId && (
+                <li>
+                  <button
+                    className="button icon solid fa-play"
+                    onClick={() => setYt1(true)}
+                  >
+                    Play video
+                  </button>
+                </li>
+              )}
+              <li>
+                <a href={learnMore} className="button">
+                  Learn more
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </Fade>
     </section>
   )
 }
 
 const Seminars = () => {
-  const [yt1, setYt1] = React.useState(false)
-  //  videoId, img, imgAlt = "", title, desc, learnMore }=
+  //  videoId, img, imgAlt = "", title, desc, learnMore }
   return (
     <section id="seminar" className="wrapper style3 spotlights">
       {/* <section style={{ minHeight: "auto", width: "100%" }}>
