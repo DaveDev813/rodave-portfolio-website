@@ -12,6 +12,7 @@ import "../css/noscript.css"
 import SEO from "../components/seo"
 import Construction from "../components/sections/construction"
 import Seminars from "../components/sections/seminars"
+import Works from "../components/sections/works"
 
 // https://html5up.net/hyperspace
 
@@ -20,12 +21,13 @@ const IndexPage = () => (
     <SEO />
     <SideBar />
     <div id="wrapper">
-      <Intro />
+      <Works />
+      {/* <Intro />
       <SoftSkills />
       <HardSkills />
       <Proff />
       <Seminars />
-      <Construction />
+      <Construction /> */}
     </div>
     <Footer />
   </div>
