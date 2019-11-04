@@ -1,17 +1,12 @@
 import React from "react"
 import "./card.scss"
 
-const Card = () => {
+const Card = ({ img = "", title = "", desc = "", learn = "#" }) => {
   return (
     <div className="container">
       <div className="card">
         <div className="card__image-container">
-          <img
-            className="card__image"
-            // src="https://images.unsplash.com/photo-1519999482648-25049ddd37b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2126&q=80"
-            src="http://127.0.0.1:5500/images/qm.png"
-            alt=""
-          />
+          <img className="card__image" src={img} alt="" />
         </div>
         <svg className="card__svg" viewBox="0 0 800 500">
           <path
@@ -28,12 +23,9 @@ const Card = () => {
           />
         </svg>
         <div className="card__content">
-          <h1 className="card__title">Lorem ipsum</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-            dolor praesentium at quod autem omnis
-          </p>
-          <a href="#" className="button primary small">
+          <h1 className="card__title">{title}</h1>
+          <p>{desc}</p>
+          <a href={learn} className="button primary small">
             Learn More
           </a>
         </div>
