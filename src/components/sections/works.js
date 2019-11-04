@@ -51,13 +51,17 @@ const Works = () => {
         >
           {items}
         </Grid>
-        <ul className="actions">
-          <li>
-            <a href="generic.html" className="button primary">
-              Read more
-            </a>
-          </li>
-        </ul>
+        <Grid container spacing={8}>
+          <Grid item>
+            <ul className="actions">
+              <li>
+                <a href="generic.html" className="button primary">
+                  Read more
+                </a>
+              </li>
+            </ul>
+          </Grid>
+        </Grid>
       </div>
     </section>
   )
