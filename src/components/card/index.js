@@ -8,7 +8,8 @@ const Card = () => {
         <div className="card__image-container">
           <img
             className="card__image"
-            src="https://images.unsplash.com/photo-1519999482648-25049ddd37b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2126&q=80"
+            // src="https://images.unsplash.com/photo-1519999482648-25049ddd37b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2126&q=80"
+            src="http://127.0.0.1:5500/images/qm.png"
             alt=""
           />
         </div>
@@ -16,7 +17,7 @@ const Card = () => {
           <path
             d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500"
             stroke="transparent"
-            fill="#333"
+            fill="#57959e"
           />
           <path
             className="card__line"
@@ -30,10 +31,11 @@ const Card = () => {
           <h1 className="card__title">Lorem ipsum</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-            dolor praesentium at quod autem omnis, amet eaque unde perspiciatis
-            adipisci possimus quam facere illo et quisquam quia earum nesciunt
-            porro.
+            dolor praesentium at quod autem omnis
           </p>
+          <a href="#" className="button primary small">
+            Learn More
+          </a>
         </div>
       </div>
     </div>

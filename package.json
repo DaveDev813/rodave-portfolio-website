@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@material-ui/core": "^4.5.2",
     "gatsby": "^2.16.1",
     "gatsby-image": "^2.2.29",
     "gatsby-plugin-manifest": "^2.2.23",
@@ -20,7 +21,6 @@
     "react-avatar": "^3.7.0",
     "react-dom": "^16.10.2",
     "react-helmet": "^5.2.1",
-    "react-masonry-css": "^1.0.14",
     "react-modal-video": "^1.2.3",
     "react-reveal": "^1.2.2",
     "react-skillbars": "^1.5.1",

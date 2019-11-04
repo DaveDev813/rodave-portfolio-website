@@ -21,13 +21,13 @@ const IndexPage = () => (
     <SEO />
     <SideBar />
     <div id="wrapper">
-      <Works />
-      {/* <Intro />
+      <Intro />
       <SoftSkills />
       <HardSkills />
       <Proff />
+      <Works />
       <Seminars />
-      <Construction /> */}
+      <Construction />
     </div>
     <Footer />
   </div>

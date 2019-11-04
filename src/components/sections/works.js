@@ -1,6 +1,6 @@
 import React from "react"
-import Masonry from "react-masonry-css"
 import Card from "../card"
+import Grid from "@material-ui/core/Grid"
 
 const Works = () => {
   let items = [
@@ -10,18 +10,27 @@ const Works = () => {
     { id: 4, name: "Here is the Fourth" },
     { id: 5, name: "High Five" },
   ]
-  items = items.map(function(item) {
-    // return <div key={item.id}>{item.name}</div>
-    return <Card />
+  items = items.map(function(item, index) {
+    return (
+      <Grid key={index} item>
+        <Card />
+      </Grid>
+    )
   })
   return (
-    <Masonry
-      breakpointCols={{ default: 4, 800: 2 }}
-      className="my-masonry-grid"
-      columnClassName="my-masonry-grid_column"
-    >
-      {items}
-    </Masonry>
+    <section id="works" className="wrapper style2 fade-up">
+      <div className="inner">
+        <h1 class="major">Works</h1>
+        <Grid
+          container
+          spacing={8}
+          justify="space-evenly"
+          alignContent="space-evenly"
+        >
+          {items}
+        </Grid>
+      </div>
+    </section>
   )
 }
 
