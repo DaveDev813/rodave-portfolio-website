@@ -79,9 +79,9 @@ const HardSkills = () => (
   <section id="hard" className="wrapper style3 fade-up">
     <div className="inner">
       <h1 class="major">Hard Skills</h1>
-      <h2>JavaScript</h2>
       {typeof window !== `undefined` && (
         <React.Fragment>
+          <h2>JavaScript</h2>
           <SkillBar skills={SKILLS1} height={50} animationDelay={100} />
           <h2>PHP</h2>
           <SkillBar skills={SKILLS2} height={50} animationDelay={100} />
