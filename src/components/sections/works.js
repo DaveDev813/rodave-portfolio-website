@@ -52,7 +52,7 @@ const Works = () => {
           {items}
         </Grid>
         <Grid container spacing={8}>
-          <Grid item>
+          <Grid item style={{ width: "100%" }}>
             <ul className="actions">
               <li>
                 <a href="generic.html" className="button primary">
