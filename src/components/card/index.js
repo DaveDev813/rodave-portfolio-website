@@ -1,10 +1,18 @@
 import React from "react"
+import Modal from "@material-ui/core/Modal"
 import "./card.scss"
 
-const Card = ({ img = "", title = "", desc = "", learn = "#" }) => {
+const CardContent = ({
+  img = "",
+  title = "",
+  desc = "",
+  learn = "#",
+  setOpen,
+  show = false,
+}) => {
   return (
     <div className="container">
-      <div className="card">
+      <div className={`card ${show ? "show" : ""}`}>
         <div className="card__image-container">
           <img className="card__image" src={img} alt="" />
         </div>
@@ -25,12 +33,31 @@ const Card = ({ img = "", title = "", desc = "", learn = "#" }) => {
         <div className="card__content">
           <h1 className="card__title">{title}</h1>
           <p>{desc}</p>
-          <a href={learn} className="button primary small">
-            Learn More
-          </a>
+          {setOpen && (
+            <a className="button primary small" onClick={() => setOpen(true)}>
+              Learn More
+            </a>
+          )}
         </div>
       </div>
     </div>
+  )
+}
+
+const Card = props => {
+  const [open, setOpen] = React.useState(false)
+  return (
+    <React.Fragment>
+      <Modal
+        aria-labelledby="simple-modal-title"
+        aria-describedby="simple-modal-description"
+        open={open}
+        onClose={() => setOpen(false)}
+      >
+        <CardContent {...props} setOpen={setOpen} />
+      </Modal>
+      <CardContent {...props} setOpen={setOpen} />
+    </React.Fragment>
   )
 }
 

@@ -16,18 +16,33 @@ img {
   overflow: hidden;
   border: solid 1px rgba(255, 255, 255, 0.15);
 
+  &.show {
+    .card__line {
+      animation: LineFadeIn 0.8s 0.8s forwards ease-in;
+    }
+    .card__image {
+      animation: ImageFadeIn 0.8s 1.4s forwards;
+    }
+    .card__content {
+      margin-top: -2rem;
+      opacity: 0;
+      animation: ContentFadeIn 0.8s 1.6s forwards;
+      p {
+        font-size: 17px;
+      }
+    }
+  }
+
   &__image-container {
     margin: -2rem -2rem 1rem -2rem;
   }
 
   &__line {
     opacity: 0;
-    animation: LineFadeIn 0.8s 0.8s forwards ease-in;
   }
 
   &__image {
     opacity: 0;
-    animation: ImageFadeIn 0.8s 1.4s forwards;
     height: 322px;
   }
 
@@ -40,7 +55,6 @@ img {
   &__content {
     margin-top: -2rem;
     opacity: 0;
-    animation: ContentFadeIn 0.8s 1.6s forwards;
     p {
       font-size: 17px;
     }
