@@ -62,6 +62,7 @@ const Card = props => {
     <React.Fragment>
       <CardContent {...props} setOpen={setOpen} />
       <Modal
+        disablePortal={true}
         className={classes.modal}
         open={open}
         closeAfterTransition
