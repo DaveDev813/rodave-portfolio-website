@@ -1,5 +1,8 @@
 import React from "react"
 import Modal from "@material-ui/core/Modal"
+import { makeStyles } from "@material-ui/core/styles"
+import Backdrop from "@material-ui/core/Backdrop"
+import Fade from "@material-ui/core/Fade"
 import "./card.scss"
 
 const CardContent = ({
@@ -44,19 +47,38 @@ const CardContent = ({
   )
 }
 
+const useStyles = makeStyles(theme => ({
+  modal: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+}))
+
 const Card = props => {
+  const classes = useStyles()
   const [open, setOpen] = React.useState(false)
   return (
     <React.Fragment>
-      <Modal
-        aria-labelledby="simple-modal-title"
-        aria-describedby="simple-modal-description"
-        open={open}
-        onClose={() => setOpen(false)}
-      >
-        <CardContent {...props} setOpen={setOpen} />
-      </Modal>
       <CardContent {...props} setOpen={setOpen} />
+      <Modal
+        className={classes.modal}
+        open={open}
+        closeAfterTransition
+        BackdropComponent={Backdrop}
+        BackdropProps={{
+          timeout: 500,
+        }}
+        onClose={() => setOpen(false)}
+        disableAutoFocus={true}
+      >
+        <Fade in={open}>
+          <div className="cardModal">
+            <h2>{props.title}</h2>
+            <p>{props.desc}</p>
+          </div>
+        </Fade>
+      </Modal>
     </React.Fragment>
   )
 }
