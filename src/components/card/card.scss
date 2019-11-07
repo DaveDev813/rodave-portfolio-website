@@ -38,12 +38,7 @@ img {
       animation: ImageFadeIn 0.8s 1.4s forwards;
     }
     .card__content {
-      margin-top: -2rem;
-      opacity: 0;
       animation: ContentFadeIn 0.8s 1.6s forwards;
-      p {
-        font-size: 17px;
-      }
     }
   }
 
