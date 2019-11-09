@@ -72,7 +72,7 @@ const Works = () => {
         >
           {items}
         </Grid>
-        <Grid container spacing={8}>
+        {/* <Grid container spacing={8}>
           <Grid item style={{ width: "100%" }}>
             <ul className="actions">
               <li>
@@ -82,7 +82,7 @@ const Works = () => {
               </li>
             </ul>
           </Grid>
-        </Grid>
+        </Grid> */}
       </div>
     </section>
   )
