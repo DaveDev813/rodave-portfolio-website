@@ -1,7 +1,7 @@
 import React from "react"
 import Card from "../card"
 import Grid from "@material-ui/core/Grid"
-import Fade from "react-reveal/Fade"
+import Qm from "./worksContent/queenMary"
 
 let items = [
   {
@@ -10,6 +10,7 @@ let items = [
     desc:
       "The historic Queen Mary is home to a 343-room Art Deco Hotel, where guests relive the excitement of cruising in the style of the 1930's without ever leaving port.",
     learn: "#",
+    content: Qm,
   },
   {
     img: "images/works/holli.png",
@@ -49,23 +50,15 @@ let items = [
   // },
 ]
 
-const WorksItem = ({ delay = 0, item }) => {
-  const [show, setShow] = React.useState(false)
-  const onReveal = () => setShow(true)
-  return (
-    <Grid item>
-      <Fade ssrFadeout delay={delay} onReveal={onReveal}>
-        <Card {...item} show={show} />
-      </Fade>
-    </Grid>
-  )
-}
-
 const Works = () => {
   let delay = 0
   items = items.map(function(item, index) {
     delay += 200
-    return <WorksItem key={index} delay={delay} item={item} />
+    return (
+      <Grid item key={index}>
+        <Card {...item} delay={delay} />
+      </Grid>
+    )
   })
   return (
     <section id="works" className="wrapper style2 fade-up">

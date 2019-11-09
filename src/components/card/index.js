@@ -1,8 +1,8 @@
 import React from "react"
 import Modal from "@material-ui/core/Modal"
-import { makeStyles } from "@material-ui/core/styles"
 import Backdrop from "@material-ui/core/Backdrop"
 import Fade from "@material-ui/core/Fade"
+import * as RevealFade from "react-reveal/Fade"
 import "./card.scss"
 
 const CardContent = ({
@@ -47,23 +47,19 @@ const CardContent = ({
   )
 }
 
-const useStyles = makeStyles(theme => ({
-  modal: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-}))
-
 const Card = props => {
-  const classes = useStyles()
   const [open, setOpen] = React.useState(false)
+  const [show, setShow] = React.useState(false)
+
   return (
     <React.Fragment>
-      <CardContent {...props} setOpen={setOpen} />
+      <RevealFade ssrFadeout delay={props.delay} onReveal={() => setShow(true)}>
+        <CardContent {...props} setOpen={setOpen} show={show} />
+      </RevealFade>
+
       <Modal
         disablePortal={true}
-        className={classes.modal}
+        className="modalWorks"
         open={open}
         closeAfterTransition
         BackdropComponent={Backdrop}
@@ -75,8 +71,18 @@ const Card = props => {
       >
         <Fade in={open}>
           <div className="cardModal">
-            <h2>{props.title}</h2>
-            <p>{props.desc}</p>
+            <div
+              className=" icon solid fa-times closeBtn"
+              onClick={() => setOpen(false)}
+            />
+            {props.content ? (
+              props.content()
+            ) : (
+              <React.Fragment>
+                <h2 class="major">{props.title}</h2>
+                <p>{props.desc}</p>
+              </React.Fragment>
+            )}
           </div>
         </Fade>
       </Modal>
