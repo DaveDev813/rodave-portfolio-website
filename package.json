@@ -21,7 +21,7 @@
     "react-avatar": "^3.7.0",
     "react-dom": "^16.10.2",
     "react-helmet": "^5.2.1",
-    "react-modal-video": "^1.2.3",
+    "react-modal-video": "git+https://github.com/DaveDev813/react-modal-video.git#rodave-portfolio",
     "react-reveal": "^1.2.2",
     "react-skillbars": "^1.5.1",
     "react-vertical-timeline-component": "^2.5.0"

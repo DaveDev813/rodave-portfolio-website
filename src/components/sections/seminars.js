@@ -15,16 +15,16 @@ const SeminarItem = ({
   const [yt1, setYt1] = React.useState(false)
   return (
     <section>
+      {videoId && (
+        <ModalVideo
+          channel="youtube"
+          isOpen={yt1}
+          videoId={videoId}
+          onClose={() => setYt1(false)}
+          youtube={{ autoplay: true }}
+        />
+      )}
       <Fade up ssrFadeout>
-        {videoId && (
-          <ModalVideo
-            channel="youtube"
-            isOpen={yt1}
-            videoId={videoId}
-            onClose={() => setYt1(false)}
-            youtube={{ autoplay: true }}
-          />
-        )}
         <div className="image" style={{ display: "flex" }}>
           <img
             className="thumbImage"
