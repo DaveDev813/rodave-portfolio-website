@@ -55,7 +55,7 @@ const Works = () => {
   items = items.map(function(item, index) {
     delay += 200
     return (
-      <Grid item key={index}>
+      <Grid item key={index} className="cardContainer">
         <Card {...item} delay={delay} />
       </Grid>
     )

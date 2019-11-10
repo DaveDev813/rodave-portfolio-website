@@ -12,6 +12,12 @@
 img {
   width: 100%;
 }
+.cardContainer {
+  @include breakpoint("<=small") {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+}
 
 .cardModal {
   @include container;
@@ -103,6 +109,9 @@ img {
     position: absolute;
     left: 0;
     top: 115px;
+    @include breakpoint("<=medium") {
+      width: 100% !important;
+    }
   }
 }
 
