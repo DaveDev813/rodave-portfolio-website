@@ -13,6 +13,7 @@ import SEO from "../components/seo"
 import Construction from "../components/sections/construction"
 import Seminars from "../components/sections/seminars"
 import FbChat from "../components/fbchat"
+import Works from "../components/sections/works"
 
 // https://html5up.net/hyperspace
 
@@ -25,6 +26,7 @@ const IndexPage = () => (
       <SoftSkills />
       <HardSkills />
       <Proff />
+      <Works />
       <Seminars />
       <Construction />
     </div>

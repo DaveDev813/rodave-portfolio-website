@@ -28,12 +28,17 @@ const SideBar = () => {
             </Fade>
             <Fade ssrFadeout delay={incrimentDelay()}>
               <li>
-                <a href="#three">Professional Experience</a>
+                <a href="#three">Experience</a>
               </li>
             </Fade>
             <Fade ssrFadeout delay={incrimentDelay()}>
               <li>
-                <a href="#seminar">Seminars Attended</a>
+                <a href="#works">Works</a>
+              </li>
+            </Fade>
+            <Fade ssrFadeout delay={incrimentDelay()}>
+              <li>
+                <a href="#seminar">Seminars</a>
               </li>
             </Fade>
 
