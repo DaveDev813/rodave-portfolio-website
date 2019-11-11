@@ -2,15 +2,27 @@ import React from "react"
 import Card from "../card"
 import Grid from "@material-ui/core/Grid"
 import Qm from "./worksContent/queenMary"
+import Holli from "./worksContent/holli"
+import Sierra from "./worksContent/sierra"
+import Gd from "./worksContent/gd"
+import Redbull from "./worksContent/redbull"
 
 let items = [
   {
-    img: "images/works/qm.png",
-    title: "The Queen Mary",
+    img: "images/works/sierra.png",
+    title: "Sierra Labs",
     desc:
-      "The historic Queen Mary is home to a 343-room Art Deco Hotel, where guests relive the excitement of cruising in the style of the 1930's without ever leaving port.",
+      "Sierra Labs build products for Healthcare and Life Science companies to accelerate innovation and get to market faster.",
     learn: "#",
-    content: Qm,
+    content: Sierra,
+  },
+  {
+    img: "images/works/gd.png",
+    title: "Green Direct",
+    desc:
+      "Green Direct is a community where businesses and consumers can search and discover cannabis products, become educated on all things cannabis ...",
+    learn: "#",
+    content: Gd,
   },
   {
     img: "images/works/holli.png",
@@ -18,27 +30,23 @@ let items = [
     desc:
       "HOLLIBLU is consistently dedicated to creating a supportive and thriving healthcare ecosystem. We believe that when nurses thrive so does ...",
     learn: "#",
-  },
-  {
-    img: "images/works/sierra.png",
-    title: "Sierra Labs",
-    desc:
-      "HOLLIBLU is consistently dedicated to creating a supportive and thriving healthcare ecosystem. We believe that when nurses thrive so does ...",
-    learn: "#",
+    content: Holli,
   },
   {
     img: "images/works/redbullwing.png",
     title: "Redbull",
     desc:
-      "HOLLIBLU is consistently dedicated to creating a supportive and thriving healthcare ecosystem. We believe that when nurses thrive so does ...",
+      "Developed web applications for RedBull employees for ease of access and workflow.",
     learn: "#",
+    content: Redbull,
   },
   {
-    img: "images/works/gd.png",
-    title: "Green Direct",
+    img: "images/works/qm.png",
+    title: "The Queen Mary",
     desc:
-      "HOLLIBLU is consistently dedicated to creating a supportive and thriving healthcare ecosystem. We believe that when nurses thrive so does ...",
+      "The historic Queen Mary is home to a 343-room Art Deco Hotel, where guests relive the excitement of cruising in the style of the 1930's without ever leaving port.",
     learn: "#",
+    content: Qm,
   },
   // {
   //   img:
