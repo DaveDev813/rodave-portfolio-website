@@ -10,5 +10,3 @@
 ## 🚀 User Action Test
 
 https://rodave-dev.web.app/
-
-![Rodave Joseph Bobadilla](https://github.com/DaveDev813/rodave-portfolio-website/blob/master/static/images/avatar.png)
