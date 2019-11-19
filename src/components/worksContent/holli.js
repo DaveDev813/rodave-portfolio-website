@@ -7,9 +7,8 @@ const Holli = () => (
     </h2>
     <h3>About</h3>
     <p>
-      System maintenance and bug fixing on
-      <a href="https://holliblu.com">Holliblu</a>a nursing portal using Angular
-      as front end and NestJS as backend
+      System maintenance and bug fixing on Holliblu, a nursing portal using
+      Angular as front end and NestJS as backend
     </p>
     <h3>Description</h3>
     <p>
