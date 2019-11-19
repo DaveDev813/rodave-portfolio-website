@@ -1,11 +1,11 @@
 import React from "react"
 import Card from "../card"
 import Grid from "@material-ui/core/Grid"
-import Qm from "./worksContent/queenMary"
-import Holli from "./worksContent/holli"
-import Sierra from "./worksContent/sierra"
-import Gd from "./worksContent/gd"
-import Redbull from "./worksContent/redbull"
+import Qm from "../worksContent/queenMary"
+import Holli from "../worksContent/holli"
+import Sierra from "../worksContent/sierra"
+import Gd from "../worksContent/gd"
+import Redbull from "../worksContent/redbull"
 
 let items = [
   {
@@ -63,20 +63,20 @@ const Works = () => {
   items = items.map(function(item, index) {
     delay += 200
     return (
-      <Grid item key={index} className="cardContainer">
+      <Grid item key={index} className='cardContainer'>
         <Card {...item} delay={delay} />
       </Grid>
     )
   })
   return (
-    <section id="works" className="wrapper style2 fade-up">
-      <div className="inner">
-        <h1 class="major">Works</h1>
+    <section id='works' className='wrapper style2 fade-up'>
+      <div className='inner'>
+        <h1 class='major'>Work Highlights</h1>
         <Grid
           container
           spacing={8}
-          justify="space-evenly"
-          alignContent="space-evenly"
+          justify='space-evenly'
+          alignContent='space-evenly'
         >
           {items}
         </Grid>

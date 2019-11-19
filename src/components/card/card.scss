@@ -65,7 +65,9 @@ img {
   overflow: hidden;
   background: rgba(_palette(accent1), 0.16);
   @include container;
-
+  @include breakpoint("<=small") {
+    width: 100%;
+  }
   &.show {
     .card__line {
       animation: LineFadeIn 0.8s 0.8s forwards ease-in;
