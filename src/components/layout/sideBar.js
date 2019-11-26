@@ -1,13 +1,16 @@
 import React from "React"
 import Fade from "react-reveal/Fade"
-const SideBar = () => {
+import useMediaQuery from "@material-ui/core/useMediaQuery"
+import { slide as Menu } from "react-burger-menu"
+
+const SideBarContent = ({ isMobile = "", close }) => {
   let delay = 400
   const incrimentDelay = (init = false) => {
     delay = init ? delay : delay + 200
     return delay
   }
   return (
-    <section id="sidebar">
+    <section id="sidebar" className={isMobile}>
       <div className="inner">
         <nav>
           <ul>
@@ -56,6 +59,18 @@ const SideBar = () => {
       </div>
     </section>
   )
+}
+
+const SideBar = () => {
+  const matches = useMediaQuery("(max-width: 481px)")
+  if (matches) {
+    return (
+      <Menu right isOpen={false}>
+        <SideBarContent isMobile="mobile" />
+      </Menu>
+    )
+  }
+  return <SideBarContent />
 }
 
 export default SideBar

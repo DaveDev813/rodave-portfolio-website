@@ -19,6 +19,7 @@
     "prop-types": "^15.7.2",
     "react": "^16.10.2",
     "react-avatar": "^3.7.0",
+    "react-burger-menu": "^2.6.12",
     "react-dom": "^16.10.2",
     "react-helmet": "^5.2.1",
     "react-modal-video": "git+https://github.com/DaveDev813/react-modal-video.git#rodave-portfolio",
