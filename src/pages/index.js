@@ -21,10 +21,10 @@ import "../sass/main.scss"
  */
 
 const IndexPage = () => (
-  <div className='main-container'>
+  <div className="main-container">
     <SEO />
     <SideBar />
-    <div id='wrapper'>
+    <div id="wrapper">
       <Intro />
       <SoftSkills />
       <HardSkills />

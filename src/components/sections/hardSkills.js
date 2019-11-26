@@ -70,6 +70,18 @@ const SKILLS3 = [
     level: 65,
   },
 ]
+
+const SKILLS4 = [
+  // database
+  {
+    type: "MySQL",
+    level: 50,
+  },
+  {
+    type: "PostgreSQL",
+    level: 40,
+  },
+]
 const Empty = () => <React.Fragment />
 
 const SkillBar =
@@ -85,6 +97,8 @@ const HardSkills = () => (
           <SkillBar skills={SKILLS1} height={50} animationDelay={100} />
           <h2>PHP</h2>
           <SkillBar skills={SKILLS2} height={50} animationDelay={100} />
+          <h2>Database</h2>
+          <SkillBar skills={SKILLS4} height={50} animationDelay={100} />
           <h2>Other Web Stuff</h2>
           <SkillBar skills={SKILLS3} height={50} animationDelay={100} />
         </React.Fragment>

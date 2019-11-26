@@ -17,32 +17,32 @@ const SeminarItem = ({
     <section>
       {videoId && (
         <ModalVideo
-          channel="youtube"
+          channel='youtube'
           isOpen={yt1}
           videoId={videoId}
           onClose={() => setYt1(false)}
-          youtube={{ autoplay: true }}
+          youtube={{ autoplay: 1, modestbranding: 1 }}
         />
       )}
       <Fade up ssrFadeout>
-        <div className="image" style={{ display: "flex" }}>
+        <div className='image' style={{ display: "flex" }}>
           <img
-            className="thumbImage"
+            className='thumbImage'
             src={img}
             alt={imgAlt}
-            data-position="center center"
+            data-position='center center'
           />
         </div>
-        <div className="content">
-          <div className="inner">
+        <div className='content'>
+          <div className='inner'>
             <h2 style={{ marginBottom: 0 }}>{title}</h2>
             <h3>{date}</h3>
             <p>{desc}</p>
-            <ul className="actions">
+            <ul className='actions'>
               {videoId && (
                 <li>
                   <button
-                    className="button icon solid fa-play"
+                    className='button icon solid fa-play'
                     onClick={() => setYt1(true)}
                   >
                     Play video
@@ -50,7 +50,7 @@ const SeminarItem = ({
                 </li>
               )}
               <li>
-                <a href={learnMore} className="button">
+                <a href={learnMore} className='button'>
                   Learn more
                 </a>
               </li>
@@ -65,7 +65,7 @@ const SeminarItem = ({
 const Seminars = () => {
   //  videoId, img, imgAlt = "", title, desc, learnMore }
   return (
-    <section id="seminar" className="wrapper style3 spotlights">
+    <section id='seminar' className='wrapper style3 spotlights'>
       {/* <section style={{ minHeight: "auto", width: "100%" }}>
         <div className="content" style={{ minHeight: "auto", width: "100%" }}>
           <div className="inner">
@@ -75,32 +75,32 @@ const Seminars = () => {
       </section> */}
 
       <SeminarItem
-        date="June 22, 2019"
-        videoId="Fa2IO6A7KjE"
-        img="images/deeevcon.png"
-        title="DevCon Summit 2019"
-        desc="The Future of Jobs, Embracing Industry 4.0”. The Summit is a platform for developers and industry leaders to hear insightful keynote speakers, see unique exhibits, and experience highly curated sessions that are designed for the Filipino computer"
-        learnMore="https://summit.devcon.ph"
+        date='June 22, 2019'
+        videoId='Fa2IO6A7KjE'
+        img='images/deeevcon.png'
+        title='DevCon Summit 2019'
+        desc='The Future of Jobs, Embracing Industry 4.0”. The Summit is a platform for developers and industry leaders to hear insightful keynote speakers, see unique exhibits, and experience highly curated sessions that are designed for the Filipino computer'
+        learnMore='https://summit.devcon.ph'
       />
 
       <SeminarItem
-        date="October 14, 2017"
-        videoId="KEHrJenQOa0"
-        img="images/gdg.png"
-        title="GDG DevFest Philippines 2017"
-        desc="Transforming the skills of every Filipino developer to a world-class talent, GDG Philippines invited experts
+        date='October 14, 2017'
+        videoId='KEHrJenQOa0'
+        img='images/gdg.png'
+        title='GDG DevFest Philippines 2017'
+        desc='Transforming the skills of every Filipino developer to a world-class talent, GDG Philippines invited experts
 in Android, Web, and Cloud technologies to impart knowledge to our participants in a series of
-workshops and sessions."
-        learnMore="https://www.meetup.com/gdgphilippines/events/243705245/"
+workshops and sessions.'
+        learnMore='https://www.meetup.com/gdgphilippines/events/243705245/'
       />
 
       <SeminarItem
-        date="May 20, 2017 – May 21, 2017"
-        videoId="RhvkLCTcZMY"
-        img="images/uxph.jpg"
-        title="UX Philippines Conference 2017"
-        desc="UX Design Conference for Filipinos in the Asian region."
-        learnMore="https://metromanila.platinumlist.net/event/49824/ux-philippines-conference-2017-design-for-a-better-philippines"
+        date='May 20, 2017 – May 21, 2017'
+        videoId='RhvkLCTcZMY'
+        img='images/uxph.jpg'
+        title='UX Philippines Conference 2017'
+        desc='UX Design Conference for Filipinos in the Asian region.'
+        learnMore='https://metromanila.platinumlist.net/event/49824/ux-philippines-conference-2017-design-for-a-better-philippines'
       />
     </section>
   )

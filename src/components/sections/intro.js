@@ -1,6 +1,7 @@
 import React from "react"
 import Avatar from "react-avatar"
 import Fade from "react-reveal/Fade"
+import ModalVideo from "react-modal-video"
 
 const Intro = ({ hasResume = true }) => {
   let delay = 0
@@ -8,17 +9,33 @@ const Intro = ({ hasResume = true }) => {
     delay = init ? delay : delay + 200
     return delay
   }
+  const [open, setOpen] = React.useState(false)
   return (
-    <section id="intro" className="wrapper style1 fullscreen fade-up">
+    <section id='intro' className='wrapper style1 fullscreen fade-up'>
       <Avatar
-        className="avatar"
-        src="/images/avatar.png"
-        size="200"
+        className='avatar'
+        src='/images/avatar.png'
+        size='200'
         round={true}
-        alt="full-stack software developer Rodave Joseph Bobadilla"
+        alt='full-stack software developer Rodave Joseph Bobadilla'
+        onClick={() => setOpen(true)}
       />
 
-      <div className="inner">
+      <ModalVideo
+        channel='youtube'
+        isOpen={open}
+        videoId='VUiexrOMfjA'
+        onClose={() => setOpen(false)}
+        youtube={{
+          autoplay: 1,
+          loop: 1,
+          showinfo: 0,
+          controls: 0,
+          modestbranding: 1,
+        }}
+      />
+
+      <div className='inner'>
         <Fade up ssrFadeout>
           <h1 style={{ margin: 0 }}>Rodave Joseph B. Bobadilla</h1>
         </Fade>
@@ -33,17 +50,17 @@ const Intro = ({ hasResume = true }) => {
           </p>
         </Fade>
         <Fade up ssrFadeout delay={incrimentDelay()}>
-          <ul className="actions">
+          <ul className='actions'>
             <li>
               {hasResume ? (
                 <a
-                  href="https://drive.google.com/file/d/1gdIWnGb5Xp8v2ffhOv3FvGazcvYxGTzL/view?usp=sharing"
-                  className="button icon solid fa-download"
+                  href='https://drive.google.com/file/d/1gdIWnGb5Xp8v2ffhOv3FvGazcvYxGTzL/view?usp=sharing'
+                  className='button icon solid fa-download'
                 >
                   Download resume
                 </a>
               ) : (
-                <a href="#" className="button icon solid fa-download">
+                <a href='#' className='button icon solid fa-download'>
                   Download resume
                 </a>
               )}
