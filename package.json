@@ -28,7 +28,13 @@
     "react-vertical-timeline-component": "^2.5.0"
   },
   "devDependencies": {
-    "prettier": "^1.18.2"
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-watch": "^5.0.1",
+    "prettier": "^1.18.2",
+    "readable-stream": "^3.4.0"
   },
   "keywords": [
     "gatsby"
