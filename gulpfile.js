@@ -3,7 +3,7 @@ var uglify = require("gulp-uglify")
 var pipeline = require("readable-stream").pipeline
 var concat = require("gulp-concat")
 
-var jsSrc = "static/js/src/*.js"
+var jsSrc = "src/staticScripts/*.js"
 
 gulp.task("compress", function() {
   return pipeline(
