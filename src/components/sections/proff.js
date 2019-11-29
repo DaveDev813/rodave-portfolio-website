@@ -88,7 +88,7 @@ const Proff = () => (
           className="vertical-timeline-element--work"
           date="April 7, 2014 – July 17, 2014"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          icon={<Avatar src="/images/wc.jpg" size="60" round={true} alt="" />}
+          icon={<Avatar src="/images/wc.png" size="60" round={true} alt="" />}
         >
           <h3 className="vertical-timeline-element-title">
             <a href="https://weleadcomtech.wordpress.com">We Lead Comtech</a>
