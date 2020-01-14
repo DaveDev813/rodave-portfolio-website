@@ -3,7 +3,7 @@ import Avatar from "react-avatar"
 import Fade from "react-reveal/Fade"
 import ModalVideo from "react-modal-video"
 
-const Intro = ({ hasResume = true }) => {
+const Intro = ({ hasResume = false }) => {
   let delay = 0
   const incrimentDelay = (init = false) => {
     delay = init ? delay : delay + 200
@@ -11,20 +11,20 @@ const Intro = ({ hasResume = true }) => {
   }
   const [open, setOpen] = React.useState(false)
   return (
-    <section id='intro' className='wrapper style1 fullscreen fade-up'>
+    <section id="intro" className="wrapper style1 fullscreen fade-up">
       <Avatar
-        className='avatar'
-        src='/images/avatar.png'
-        size='200'
+        className="avatar"
+        src="/images/avatar.png"
+        size="200"
         round={true}
-        alt='full-stack software developer Rodave Joseph Bobadilla'
+        alt="full-stack software developer Rodave Joseph Bobadilla"
         onClick={() => setOpen(true)}
       />
 
       <ModalVideo
-        channel='youtube'
+        channel="youtube"
         isOpen={open}
-        videoId='VUiexrOMfjA'
+        videoId="VUiexrOMfjA"
         onClose={() => setOpen(false)}
         youtube={{
           autoplay: 1,
@@ -35,7 +35,7 @@ const Intro = ({ hasResume = true }) => {
         }}
       />
 
-      <div className='inner'>
+      <div className="inner">
         <Fade up ssrFadeout>
           <h1 style={{ margin: 0 }}>Rodave Joseph B. Bobadilla</h1>
         </Fade>
@@ -50,17 +50,21 @@ const Intro = ({ hasResume = true }) => {
           </p>
         </Fade>
         <Fade up ssrFadeout delay={incrimentDelay()}>
-          <ul className='actions'>
+          <ul className="actions">
             <li>
               {hasResume ? (
                 <a
-                  href='https://drive.google.com/file/d/1gdIWnGb5Xp8v2ffhOv3FvGazcvYxGTzL/view?usp=sharing'
-                  className='button icon solid fa-download'
+                  href="https://drive.google.com/file/d/1gdIWnGb5Xp8v2ffhOv3FvGazcvYxGTzL/view?usp=sharing"
+                  className="button icon solid fa-download"
                 >
                   Download resume
                 </a>
               ) : (
-                <a href='#' className='button icon solid fa-download'>
+                <a
+                  href="#"
+                  className="button icon solid fa-download"
+                  click={() => alert("This is disabled for now")}
+                >
                   Download resume
                 </a>
               )}
