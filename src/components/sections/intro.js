@@ -61,9 +61,11 @@ const Intro = ({ hasResume = false }) => {
                 </a>
               ) : (
                 <a
-                  href="#"
                   className="button icon solid fa-download"
-                  click={() => alert("This is disabled for now")}
+                  onClick={e => {
+                    e.preventDefault()
+                    alert("This is disabled for now")
+                  }}
                 >
                   Download resume
                 </a>
