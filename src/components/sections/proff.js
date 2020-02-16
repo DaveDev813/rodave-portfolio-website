@@ -13,7 +13,28 @@ const Proff = () => (
       <VerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="November 20, 2017 - present"
+          date="January 3, 2020 - Present"
+          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          icon={
+            <Avatar src="/images/shore.png" size="60" round={true} alt="" />
+          }
+        >
+          <h3 className="vertical-timeline-element-title">
+            <a href="https://shoreoutsourcing.com/">Shore Solutions</a>{" "}
+            <a href="https://www.allgraduates.com.au/">( All Graduates )</a>
+          </h3>
+          <h4 className="vertical-timeline-element-subtitle">
+            Full-stack Web Developer
+          </h4>
+          <p>
+            17th Floor Net Cube Building 30th Street cor. 3rd Avenue Bonifacio
+            Global City, Taguig City 1634
+          </p>
+        </VerticalTimelineElement>
+
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="November 20, 2017 - December 13, 2019"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<Avatar src="/images/isbx.png" size="60" round={true} alt="" />}
         >
@@ -47,7 +68,7 @@ const Proff = () => (
           <h3 className="vertical-timeline-element-title">
             <a href="http://nuevasys.ph/">Nuevasys Inc.</a>
           </h3>
-          <h4 className="vertical-timeline-element-subtitle">Php Developer</h4>
+          <h4 className="vertical-timeline-element-subtitle">PHP Developer</h4>
           <p>
             23rd L-M, Burgundy Corporate Tower, 252 Sen. Gil Puyat Avenue,
             Makati City, Philippines
@@ -73,7 +94,7 @@ const Proff = () => (
           <h3 className="vertical-timeline-element-title">
             <a href="http://www.leekie.com/">Leekie Enterprise Inc.</a>
           </h3>
-          <h4 className="vertical-timeline-element-subtitle">Php Developer</h4>
+          <h4 className="vertical-timeline-element-subtitle">PHP Developer</h4>
           <p>
             23rd L-M, Burgundy Corporate Tower, 252 Sen. Gil Puyat Avenue,
             Makati City, Philippines
