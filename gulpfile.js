@@ -3,6 +3,7 @@ var uglify = require("gulp-uglify")
 var pipeline = require("readable-stream").pipeline
 var concat = require("gulp-concat")
 const imagemin = require("gulp-imagemin")
+const webp = require("gulp-webp")
 
 var jsSrc = "src/staticSrc/scripts/*.js"
 var imgSrc = "src/staticSrc/images/**/*"
@@ -17,7 +18,12 @@ gulp.task("compressjs", function() {
 })
 
 gulp.task("optimizeimages", function() {
-  return pipeline(gulp.src(imgSrc), imagemin(), gulp.dest("static/images/"))
+  return pipeline(
+    gulp.src(imgSrc),
+    webp(),
+    imagemin(),
+    gulp.dest("static/images/")
+  )
 })
 
 gulp.task("default", function() {
