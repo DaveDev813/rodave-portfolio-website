@@ -4,7 +4,7 @@
 
 ## Technologies Involved
 
-- React JS - https://facebook.github.io/react-native/
+- React JS - https://reactjs.org/
 - Gatsby JS - https://www.gatsbyjs.org/
 - Firebase - https://firebase.google.com/
 
