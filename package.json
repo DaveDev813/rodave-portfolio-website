@@ -28,7 +28,7 @@
     "react-vertical-timeline-component": "^2.5.0"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-imagemin": "^6.2.0",
     "gulp-rename": "^1.4.0",

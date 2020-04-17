@@ -1,25 +1,28 @@
-var gulp = require("gulp")
+const { src, dest, watch, parallel } = require("gulp")
 var uglify = require("gulp-uglify")
-var pipeline = require("readable-stream").pipeline
 var concat = require("gulp-concat")
 const imagemin = require("gulp-imagemin")
 
 var jsSrc = "src/staticSrc/scripts/*.js"
 var imgSrc = "src/staticSrc/images/**/*"
 
-gulp.task("compressjs", function() {
-  return pipeline(
-    gulp.src(jsSrc),
-    concat("compressed.js"),
-    uglify(),
-    gulp.dest("static/js/")
-  )
-})
+function compressjs() {
+  return src(jsSrc)
+    .pipe(concat("compressed.js"))
+    .pipe(uglify())
+    .pipe(dest("static/js/"))
+}
 
-gulp.task("optimizeimages", function() {
-  return pipeline(gulp.src(imgSrc), imagemin(), gulp.dest("static/images/"))
-})
+function optimizeimages() {
+  return src(imgSrc)
+    .pipe(imagemin())
+    .pipe(dest("static/images/"))
+}
 
-gulp.task("default", function() {
-  gulp.watch([jsSrc], ["compressjs"])
-})
+function watchAssets() {
+  watch([jsSrc], {}, parallel(compressjs))
+}
+
+exports.compressjs = compressjs
+exports.optimizeimages = optimizeimages
+exports.default = watchAssets

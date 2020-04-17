@@ -3,7 +3,7 @@ import Avatar from "react-avatar"
 import Fade from "react-reveal/Fade"
 import ModalVideo from "react-modal-video"
 
-const Intro = ({ hasResume = false }) => {
+const Intro = ({ hasResume = true }) => {
   let delay = 0
   const incrimentDelay = (init = false) => {
     delay = init ? delay : delay + 200
